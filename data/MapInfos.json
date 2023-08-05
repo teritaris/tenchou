@@ -1,7 +1,7 @@
 [
 null,
 {"id":1,"expanded":false,"name":"MAP001","order":1,"parentId":0,"scrollX":748.1999999999999,"scrollY":731.4},
-{"id":2,"expanded":true,"name":"ザギン","order":2,"parentId":0,"scrollX":832.1999999999999,"scrollY":1156.2,"quick":false},
+{"id":2,"expanded":true,"name":"ザギン","order":2,"parentId":0,"scrollX":922.1999999999999,"scrollY":804.5999999999999,"quick":false},
 {"id":3,"expanded":false,"name":"酒場","order":3,"parentId":2,"scrollX":748.1999999999999,"scrollY":731.4,"quick":false},
 {"id":4,"expanded":true,"name":"城","order":6,"parentId":2,"scrollX":757.8,"scrollY":1467,"quick":false},
 {"id":5,"expanded":false,"name":"城1F","order":7,"parentId":4,"scrollX":1013.4,"scrollY":741,"quick":false},
