@@ -1,0 +1,15 @@
+[
+null,
+{"id":1,"expanded":false,"name":"MAP001","order":1,"parentId":0,"scrollX":748.1999999999999,"scrollY":731.4},
+{"id":2,"expanded":true,"name":"ザギン","order":2,"parentId":0,"scrollX":832.1999999999999,"scrollY":1156.2,"quick":false},
+{"id":3,"expanded":false,"name":"酒場","order":3,"parentId":2,"scrollX":748.1999999999999,"scrollY":731.4,"quick":false},
+{"id":4,"expanded":true,"name":"城","order":6,"parentId":2,"scrollX":757.8,"scrollY":1467,"quick":false},
+{"id":5,"expanded":false,"name":"城1F","order":7,"parentId":4,"scrollX":1013.4,"scrollY":741,"quick":false},
+{"id":6,"expanded":false,"name":"城2F","order":8,"parentId":4,"scrollX":851.4,"scrollY":985.8,"quick":false},
+{"id":7,"expanded":false,"name":"城B1F","order":9,"parentId":4,"scrollX":748.1999999999999,"scrollY":731.4,"quick":false},
+{"id":8,"expanded":true,"name":"宿屋1F","order":4,"parentId":2,"scrollX":748.1999999999999,"scrollY":731.4,"quick":false},
+{"id":9,"expanded":false,"name":"宿屋2F","order":5,"parentId":8,"scrollX":748.1999999999999,"scrollY":731.4,"quick":false},
+{"id":10,"expanded":true,"name":"転移の間","order":10,"parentId":2,"scrollX":748.1999999999999,"scrollY":731.4,"quick":false},
+{"id":11,"expanded":false,"name":"カ・ジーノ","order":12,"parentId":0,"scrollX":915,"scrollY":1294.2},
+{"id":12,"expanded":false,"name":"武器屋","order":11,"parentId":2,"scrollX":748.1999999999999,"scrollY":731.4,"quick":false}
+]
