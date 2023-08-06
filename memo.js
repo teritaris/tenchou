@@ -19,63 +19,72 @@ fetch(url)
     });
 
     /////////////////////
-// 環境情報を取得
-// 開発用
-console.log("init");
-// 環境
-$gameVariables.setValue(2, "testnet");
-// 環境情報を取得
-// 開発用
-if($gameVariables.value(2) == "testnet"){
-    // ネットワークタイプ(パラメータでネットワークタイプ切り替えるAPIで使う)
-    $gameVariables.setValue(2, 2);
-    // 使用するノードURL
-    $gameVariables.setValue(3,
-        "https://sym-test-03.opening-line.jp:3001")
-    // generationHash
-    $gameVariables.setValue(4,
-        "49D6E1CE276A85B70EAFE52349AACCA389302E7A9754BCF1221E79494FC665A4")
-    // epochAdjustment
-    $gameVariables.setValue(5,
-        "1667250467")
-    // currencyMosaicId（symbol.xym）送金トランザクションで使う
-    $gameVariables.setValue(6,
-        "72C0212E67A08BCE")
-    // APIサーバ・ドメイン
-    $gameVariables.setValue(7,
-        "https://symbol-common.teritaris.net")
-    // プレイヤーアドレス ゲーム内で入力する用
-    // 未入力は0
-    $gameVariables.setValue(10, 0)
-    // サンプルアカウント
-    // $gameVariables.setValue(11, "TDX6VBX2WL72GD5SOKR4PSEQMKU6IFBMWL7363I")
-    // revoke mosaicID
-    $gameVariables.setValue(12,"026009F82227E9E6")
-}else{
-    // ネットワークタイプ(パラメータでネットワークタイプ切り替えるAPIで使う)
-    $gameVariables.setValue(1, 2);
-    // 使用するノードURL
-    $gameVariables.setValue(3,
-        "https://00fabf14.xym.stir-hosyu.com:3001")
-    // generationHash
-    $gameVariables.setValue(4,
-        "57F7DA205008026C776CB6AED843393F04CD458E0AA2D9F1D5F31A402072B2D6")
-    // epochAdjustment
-    $gameVariables.setValue(5,
-        "1615853185")
-    // currencyMosaicId（symbol.xym）送金トランザクションで使う
-    $gameVariables.setValue(6,
-        "6BED913FA20223F8")
-    // APIサーバ・ドメイン
-    $gameVariables.setValue(7,
-        "https://symbol-common.teritaris.net")
-    // プレイヤーアドレス
-    $gameVariables.setValue(10, 0)
-    // サンプルアカウント
-    // $gameVariables.setValue(11, "NCHRCR6RLU3VWUO4MRDBPD2AQBKHWY5TWRNVYVY")
-    // revoke mosaicID
-    // $gameVariables.setValue(12,"026009F82227E9E6")
-}
+    console.log("init");
+    // SHI-SU枚数取得稼働フラグ
+    $gameSwitches.setValue(2, true)
+    // 環境
+    $gameVariables.setValue(2, "mainnet");
+    // 環境情報を取得
+    // 開発用
+    if($gameVariables.value(2) == "testnet"){
+        // ネットワークタイプ(パラメータでネットワークタイプ切り替えるAPIで使う)
+        $gameVariables.setValue(2, 2);
+        // 使用するノードURL
+        $gameVariables.setValue(3,
+            "https://sym-test-03.opening-line.jp:3001")
+        // generationHash
+        $gameVariables.setValue(4,
+            "49D6E1CE276A85B70EAFE52349AACCA389302E7A9754BCF1221E79494FC665A4")
+        // epochAdjustment
+        $gameVariables.setValue(5,
+            "1667250467")
+        // currencyMosaicId（symbol.xym）送金トランザクションで使う
+        $gameVariables.setValue(6,
+            "72C0212E67A08BCE")
+        // APIサーバ・ドメイン
+        $gameVariables.setValue(7,
+            "https://symbol-common.teritaris.net")
+        // プレイヤーアドレス ゲーム内で入力する用
+        // 未入力は0
+        $gameVariables.setValue(10, 0)
+        // サンプルアカウント
+        // $gameVariables.setValue(11, "TDX6VBX2WL72GD5SOKR4PSEQMKU6IFBMWL7363I")
+        // revoke mosaicID
+        $gameVariables.setValue(12,"026009F82227E9E6")
+        // 抽選 mosaicID
+        $gameVariables.setValue(13,"33005A188D4A9BAF")
+        // 特典 mosaicID
+        $gameVariables.setValue(14,"59F0EAF95A4E71E2")
+    }else{
+       // ネットワークタイプ(パラメータでネットワークタイプ切り替えるAPIで使う)
+       $gameVariables.setValue(2, 1);
+        // 使用するノードURL
+        $gameVariables.setValue(3,
+            "https://00fabf14.xym.stir-hosyu.com:3001")
+        // generationHash
+        $gameVariables.setValue(4,
+            "57F7DA205008026C776CB6AED843393F04CD458E0AA2D9F1D5F31A402072B2D6")
+        // epochAdjustment
+        $gameVariables.setValue(5,
+            "1615853185")
+        // currencyMosaicId（symbol.xym）送金トランザクションで使う
+        $gameVariables.setValue(6,
+            "6BED913FA20223F8")
+        // APIサーバ・ドメイン
+        $gameVariables.setValue(7,
+            "https://symbol-common.teritaris.net")
+        // プレイヤーアドレス ゲーム内で入力する用
+        // コンテニュー時は初期化しない
+        //$gameVariables.setValue(10, 0)
+        // サンプルアカウント
+        // $gameVariables.setValue(11, "NCHRCR6RLU3VWUO4MRDBPD2AQBKHWY5TWRNVYVY")
+        // revoke mosaicID
+        $gameVariables.setValue(12,"73DAF1934D237E9B")
+        // 抽選 mosaicID
+        $gameVariables.setValue(13,"30C6C171622EDF57")
+        // 特典 mosaicID
+        $gameVariables.setValue(14,"1AAB7455A943BDAD")
+    }
 
 router.get('/mosaic-revocation/game-coin', async function(request, response) {
 
@@ -156,3 +165,56 @@ const getMosaicAmount = async (address, mosaicId) => {
     }
 })();
 console.log("SHISU Check")
+
+
+
+// 特典NFT初期はオフ
+$gameSwitches.setValue(6, false)
+var url = $gameVariables.value(3)+"/accounts/"+$gameVariables.value(10)
+fetch(url)
+    .then(function (data) {
+        return data.json();
+    })
+    .then(function (json) {
+        // アドレスを正常に登録できているかチェック
+        if (json.hasOwnProperty("account") && json.account.hasOwnProperty("mosaics")){
+            for (var i = 0; i < json.account.mosaics.length; i++) {
+                // 特典NFTを持っているかチェック
+                if (json.account.mosaics[i].id == "59F0EAF95A4E71E2") {
+                    if (json.account.mosaics[i].amount > 0) {
+                        $gameSwitches.setValue(6, true)
+                    } else {
+                        $gameSwitches.setValue(6, false)
+                    }
+                }
+            }
+        } else {
+            // 存在しないアドレスの場合は正常スイッチ・オフ
+            $gameSwitches.setValue(6, false)
+        }
+    });
+
+
+
+// 抽選券保有チェック
+var url = $gameVariables.value(3)+"/accounts/"+$gameVariables.value(10)
+fetch(url)
+    .then(function (data) {
+        return data.json();
+    })
+    .then(function (json) {
+        // アドレスを正常に登録できているかチェック
+        if (json.hasOwnProperty("account") && json.account.hasOwnProperty("mosaics")){
+            for (var i = 0; i < json.account.mosaics.length; i++) {
+                // 抽選券を持っているかチェック
+                if (json.account.mosaics[i].id == $gameVariables.value(13)) {
+                    if (json.account.mosaics[i].amount > 0) {
+                        $gameSwitches.setValue(11, true)
+                        console.log("has")
+                    } else {
+                        $gameSwitches.setValue(11, false)
+                    }
+                }
+            }
+        }
+    });
